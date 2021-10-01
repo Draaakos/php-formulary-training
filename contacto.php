@@ -27,8 +27,7 @@
         <br>
         <input type="checkbox" name="casilla">Enviarme una copia
         <br>
-        <input type="submit" name="aceptar" value = "Enviar mensaje">
-      
+        <input type="submit" name="aceptar" value="Enviar mensaje">
     </form>
 </body>
 </html>
