@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario de contacto</title>
+    </head>
+    <body>
+        <h1>Formulario de  Contacto</h1>
+            <ol>
+                <li>Para ingresar pulse demostracion.
+                <br> <a href="contacto.php"> Demostracion</a>
+                </li>
+            </ol>
+    </body>
 </html>
