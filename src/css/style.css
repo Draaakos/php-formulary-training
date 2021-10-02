@@ -1,0 +1,49 @@
+
+.formul {
+    max-width: 600px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    box-shadow: 0 0 9px rgb(77, 75, 75);
+}
+
+.title {
+    color:rgb(241, 130, 50);
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    color:rgb(70, 68, 68);
+}
+
+.description {
+    color: rgb(199, 195, 195);
+    font-family: sans-serif;
+}
+
+.line {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(212, 211, 211);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+}
+
+.boxOne {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+}
+
+.main__box {
+    display: flex;
+}
+
+input {
+    vertical-align: bottom;
+}
