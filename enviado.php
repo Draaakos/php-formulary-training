@@ -13,7 +13,8 @@
    $telefono = htmlspecialchars($_POST['telefono']);
    $ciudad = htmlspecialchars($_POST['ciudad']);
    $pais = htmlspecialchars($_POST['pais']);
-   $casilla = htmlspecialchars($_POST['casilla']);
+   $cuadro = htmlspecialchars($_POST['cuadrotexto']);
+   $casilla =(isset($_POST['casilla']));
 
 if ($nombre && $firstname && $email && $telefono && $ciudad && $pais){
 
@@ -27,12 +28,16 @@ echo "Su telefono movil es: ". $telefono;
 echo "<br>";
 echo "Recide en: ". $ciudad.", ". $pais;
 echo "<br>";
-echo "Su informacion adicional se a enviado de la siguiente manera: ". $casilla;
-
+echo "Su informacion adicional: ". $cuadro;
+echo "<br>";
 }else {
-echo "FALTAN DATOS";
+    echo "FALTAN DATOS";
+    }
+if($casilla){
+echo "Se a enviado su copia";
+}else{
+echo "no se a enviado su copia";
 }
-  
   ?>
  <br>
  <br>

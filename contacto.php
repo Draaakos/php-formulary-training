@@ -24,10 +24,10 @@
                 <div class="form-section__general-info__division form-section__general-info__division-input-list">
                     <div class="subtitle">Obligatorio</div>
 
-                    <div class="wrapper__input">
-                        <input type="text" name="name" placeholder="Nombre Completo" required />
-                        <input type="text" name="firstname" placeholder="Firstname" required />
-                        <input type="text" type="email" name="email" placeholder="example@gmail.com" required />
+                    <div>
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="text" name="firstname" placeholder="(Firstname)" required />
+                        <input type="text" type="email" name="email" placeholder="E-mail" required />
                         <input type="text" name="telefono" placeholder="Teléfono" required />
                     </div>
 
@@ -36,6 +36,7 @@
                         <input type="text" name="pais" placeholder="País" required />
                     </div>
                 </div>
+                <textarea rows="4" cols="20" name="cuadrotexto"></textarea>
             </div>
             
             <div class="send">
