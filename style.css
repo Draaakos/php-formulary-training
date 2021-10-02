@@ -23,3 +23,9 @@
     white-space: nowrap;
     text-align: center;
 }
+
+.title {
+    color:rgb(241, 130, 50);
+    font-size: 2em;
+    font-family: sans-serif;
+}

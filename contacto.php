@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <h1>Formulario de contacto</h1>
+        <h1 class="title">Formulario de contacto</h1>
         <h3>Si deseas ponerte en contacto con nosotros, rellene el formulario y te lo responderemos lo antes posible.</h3>
 
         <form class="form" action="./enviado.php" method="post">
