@@ -2,36 +2,32 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Resultado</title>
+    <title>Datos</title>
 </head>
 <body>
-    <h1>El valor del area de las figuras es</h1>
+    <h1>Sus datos fueron enviados satisfacoriamente</h1>
    <?php
-   $base = htmlspecialchars($_POST['base']);
-   $altura = htmlspecialchars($_POST['altura']);
-   $lado = htmlspecialchars($_POST['lado']);
-   $radio = htmlspecialchars($_POST['radio']);
+   $nombre = htmlspecialchars($_POST['name']);
+   $firstname = htmlspecialchars($_POST['firstname']);
+   $email = htmlspecialchars($_POST['email']);
+   $telefono = htmlspecialchars($_POST['telefono']);
+   $ciudad = htmlspecialchars($_POST['ciudad']);
+   $pais = htmlspecialchars($_POST['pais']);
+   $casilla = htmlspecialchars($_POST['casilla']);
 
-if ($base && $altura && $lado && $radio){
+if ($nombre && $firstname && $email && $telefono && $ciudad && $pais){
 
-    function triangulo($base, $altura){
-        $area_triangulo = ($base*$altura)/2;
-        return $area_triangulo;
-    }
-    function cuadrado($lado){
-        $area_cuadrado = $lado*$lado;
-        return $area_cuadrado;
-    }
-    function circulo($radio){
-        $area_circulo = ($radio ** 2)*3.14;
-        return $area_circulo;
-    }
-   
-echo "el area del triangulo es: ". triangulo($base, $altura). " m<sup>2</sup>";
+echo "Su nombre completo es: ". $nombre;
 echo "<br>";
-echo "el area del cuadrado es: ". cuadrado($lado). " m<sup>2</sup>";
+echo "Su primer nombre es: ". $firstname;
 echo "<br>";
-echo "el area del circulo es: ". circulo($radio). " m<sup>2</sup>";
+echo "Su email es: ". $email;
+echo "<br>";
+echo "Su telefono movil es: ". $telefono;
+echo "<br>";
+echo "Recide en: ". $ciudad.", ". $pais;
+echo "<br>";
+echo "Su informacion adicional se a enviado de la siguiente manera: ". $casilla;
 
 }else {
 echo "FALTAN DATOS";

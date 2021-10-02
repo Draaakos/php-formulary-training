@@ -25,8 +25,8 @@
         <br>
         <textarea name="texto" rows="15" cols="50"></textarea>
         <br>
-        <input type="checkbox" name="casilla">Enviarme una copia
-        <br>
+        <input type="checkbox" name="casilla"><label>Enviarme una copia</label>
+        
         <input type="submit" name="aceptar" value="Enviar mensaje">
     </form>
 </body>
