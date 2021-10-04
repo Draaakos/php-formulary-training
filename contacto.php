@@ -12,36 +12,46 @@
             <h3 class="description">Si deseas ponerte en contacto con nosotros, rellene el formulario y te lo responderemos lo antes posible.</h3>
         </div>
         <hr class="line">
-        <form class="form" action="./enviado.php" method="post">
-            <div class="form-section__general-info">
-                <div class="form-section__general-info__division form-section__general-info__division-image-list">
-                    <div class="wrapper__images">
-                        <div class="image__container"><img src= "./src/images/person.png" alt="" /></div>
-                        <div class="image__container"><img src= "./src/images/home.png" alt="" /></div>
+        <form action="./enviado.php" method="post">
+            <div class="form">
+                <div class="form-section__general-info">
+                    <div class="form-section__general-info__division form-section__general-info__division-image-list">
+                        <div class="wrapper__images">
+                            <div class="image__container"><img src= "./src/images/person.png" alt="" /></div>
+                            <div class="image__container"><img src= "./src/images/home.png" alt="" /></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section__general-info__division form-section__general-info__division-input-list">
+                        <div class="subtitle">Obligatorio</div>
+
+                        <div class="wrapper__input">
+                            <input type="text" name="name" placeholder="Nombre" required />
+                            <input type="text" name="firstname" placeholder="(Firstname)" required />
+                            <input type="text" type="email" name="email" placeholder="E-mail" required />
+                            <input type="text" name="telefono" placeholder="Teléfono" required />
+                        </div>
+
+                        <div class="wrapper__input">
+                            <input type="text" name="ciudad" placeholder="Ciudad" required />
+                            <input type="text" name="pais" placeholder="País" required />
+                        </div>
                     </div>
                 </div>
-                
-                <div class="form-section__general-info__division form-section__general-info__division-input-list">
-                    <div class="subtitle">Obligatorio</div>
 
-                    <div>
-                        <input type="text" name="name" placeholder="Nombre" required />
-                        <input type="text" name="firstname" placeholder="(Firstname)" required />
-                        <input type="text" type="email" name="email" placeholder="E-mail" required />
-                        <input type="text" name="telefono" placeholder="Teléfono" required />
-                    </div>
-
-                    <div class="wrapper__input">
-                        <input type="text" name="ciudad" placeholder="Ciudad" required />
-                        <input type="text" name="pais" placeholder="País" required />
-                    </div>
+                <div class="wrapper__textarea">
+                    <textarea class="textarea" rows="4" cols="20" name="cuadrotexto"></textarea>
                 </div>
-                <textarea rows="4" cols="20" name="cuadrotexto"></textarea>
             </div>
-            
+
             <div class="send">
-                <input type="checkbox" name="casilla"><label>Enviarme una copia</label>
-                <input type="submit" value="Enviar mensaje" />
+                <div>
+                    <input type="checkbox" name="casilla">
+                    <label>Enviarme una copia</label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar mensaje" />
+                </div>
             </div>
         </form>
     </div>
